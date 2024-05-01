@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        display: flow-root;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="ca740b42-54f4-4f4b-88f9-29157ab28180" data-root-id="p1527" style="display: contents;"></div>
+  
+    <script type="application/json" id="fadbf0e0-63f4-4d49-911f-77d4c908d5f4">
+      {"e80e5fd7-35b8-4dee-97da-ea08dd2cdd4e":{"version":"3.4.1","title":"Bokeh Application","roots":[{"type":"object","name":"GridPlot","id":"p1527","attributes":{"rows":null,"cols":null,"toolbar":{"type":"object","name":"Toolbar","id":"p1526","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1498"},{"type":"object","name":"WheelZoomTool","id":"p1499","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1500","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1501","attributes":{"syncable":false,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p1525"},{"type":"object","name":"ResetTool","id":"p1507"},{"type":"object","name":"HelpTool","id":"p1508"}]}},"children":[[{"type":"object","name":"Figure","id":"p1475","attributes":{"width":475,"height":250,"x_range":{"type":"object","name":"Range1d","id":"p1485","attributes":{"start":1999.0,"end":2021.0}},"y_range":{"type":"object","name":"DataRange1d","id":"p1477"},"x_scale":{"type":"object","name":"LinearScale","id":"p1486"},"y_scale":{"type":"object","name":"LinearScale","id":"p1487"},"title":{"type":"object","name":"Title","id":"p1478","attributes":{"text":"Number of Natural Disasters by Type and Year in Congo"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1518","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1509","attributes":{"selected":{"type":"object","name":"Selection","id":"p1510","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1511"},"data":{"type":"map","entries":[["x",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAABAn0AAAAAAAESfQAAAAAAASJ9AAAAAAABMn0AAAAAAAFCfQAAAAAAAVJ9AAAAAAABYn0AAAAAAAFyfQAAAAAAAYJ9AAAAAAABkn0AAAAAAAGifQAAAAAAAbJ9AAAAAAABwn0AAAAAAAHSfQAAAAAAAeJ9AAAAAAAB8n0AAAAAAAICfQAAAAAAAhJ9AAAAAAACIn0AAAAAAAIyfQAAAAAAAkJ9A"},"shape":[21],"dtype":"float64","order":"little"}],["y",{"type":"ndarray","array":{"type":"bytes","data":"AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA"},"shape":[21],"dtype":"int32","order":"little"}],["name",["Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic","Epidemic"]]]}}},"view":{"type":"object","name":"CDSView","id":"p1519","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1520"}}},"glyph":{"type":"object","name":"VBar","id":"p1515","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.8},"top":{"type":"field","field":"y"},"line_color":{"type":"value","value":"orange"},"line_alpha":{"type":"value","value":0.5},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.5},"hatch_color":{"type":"value","value":"orange"},"hatch_alpha":{"type":"value","value":0.5}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1516","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.8},"top":{"type":"field","field":"y"},"line_color":{"type":"value","value":"orange"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.1},"hatch_color":{"type":"value","value":"orange"},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1517","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.8},"top":{"type":"field","field":"y"},"line_color":{"type":"value","value":"orange"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"orange"},"fill_alpha":{"type":"value","value":0.2},"hatch_color":{"type":"value","value":"orange"},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1484","attributes":{"tools":[{"id":"p1498"},{"id":"p1499"},{"id":"p1500"},{"type":"object","name":"SaveTool","id":"p1506"},{"id":"p1507"},{"id":"p1508"}]}},"toolbar_location":null,"left":[{"type":"object","name":"LinearAxis","id":"p1493","attributes":{"ticker":{"type":"object","name":"FixedTicker","id":"p1522","attributes":{"ticks":{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAA"},"shape":[6],"dtype":"int32","order":"little"},"minor_ticks":[]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1495"},"axis_label":"Number of Disasters","major_label_policy":{"type":"object","name":"AllLabels","id":"p1496"}}}],"right":[{"type":"object","name":"Legend","id":"p1523","attributes":{"location":"top_left","click_policy":"hide","label_text_font_size":"6pt","spacing":5,"items":[{"type":"object","name":"LegendItem","id":"p1524","attributes":{"label":{"type":"value","value":"Epidemic"},"renderers":[{"id":"p1518"}]}}]}}],"below":[{"type":"object","name":"LinearAxis","id":"p1488","attributes":{"ticker":{"type":"object","name":"FixedTicker","id":"p1521","attributes":{"ticks":{"type":"ndarray","array":{"type":"bytes","data":"AAAAAABAn0AAAAAAAESfQAAAAAAASJ9AAAAAAABMn0AAAAAAAFCfQAAAAAAAVJ9AAAAAAABYn0AAAAAAAFyfQAAAAAAAYJ9AAAAAAABkn0AAAAAAAGifQAAAAAAAbJ9AAAAAAABwn0AAAAAAAHSfQAAAAAAAeJ9AAAAAAAB8n0AAAAAAAICfQAAAAAAAhJ9AAAAAAACIn0AAAAAAAIyfQAAAAAAAkJ9A"},"shape":[21],"dtype":"float64","order":"little"},"minor_ticks":[]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1490"},"axis_label":"Year","major_label_orientation":"vertical","major_label_policy":{"type":"object","name":"AllLabels","id":"p1491"}}}],"center":[{"type":"object","name":"Grid","id":"p1492","attributes":{"axis":{"id":"p1488"}}},{"type":"object","name":"Grid","id":"p1497","attributes":{"dimension":1,"axis":{"id":"p1493"}}}]}},0,0]]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('fadbf0e0-63f4-4d49-911f-77d4c908d5f4').textContent;
+              const render_items = [{"docid":"e80e5fd7-35b8-4dee-97da-ea08dd2cdd4e","roots":{"p1527":"ca740b42-54f4-4f4b-88f9-29157ab28180"},"root_ids":["p1527"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
