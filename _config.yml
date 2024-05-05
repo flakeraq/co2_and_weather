@@ -1,0 +1,26 @@
+title:              Unraveling the Impact of CO2 Emissions on Climate Patterns
+email:              "s103629@dtu.dk"
+description:        A Blog by Hans Christian, Helle and Clair
+author:             Hans Christian (s103629), Helle (s180317) and Clair (s184187)
+baseurl:            "/co2_and_weather"
+url:                "https://flakeraq.github.io"
+
+show_date:          False
+# Social Profiles
+#twitter_username:   SBootstrap
+github_username:    flakeraq/co2_and_weather
+#facebook_username:  StartBootstrap
+instagram_username:  
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
