@@ -30,7 +30,8 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+        {% assign reversed_posts = site.posts | reverse %}
+        {% for post in reversed_posts limit: 5 %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
