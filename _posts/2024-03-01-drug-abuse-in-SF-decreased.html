@@ -21,51 +21,71 @@ background: '/img/posts/industry.jpg'
     shown through a line plot. The line plot showcases the CO2 emission from 1960 to 2022, revealing a 
     remarkable increase in 1979 and a notable decrease afterwards with the lowest levels of CO2 emission in 2020.
 </p>
-<img src="{{ '/img/posts/co2_emission_every_year_peaks_in_EU.png' | relative_url }}" alt="Crime Heatmap" style="width: 100%;">
+<img id="lineplot" src="{{ '/img/posts/co2_emission_every_year_peaks_in_EU.png' | relative_url }}" alt="Crime Heatmap" style="width: 100%;">
 <span class="caption text-muted">Europe's CO2 Emission Journey (1960-2022)</span>
+<span class="caption text-muted">
+    The plot is an overview of Europe's CO2 Emission Journey from 1960 to 2022. 
+    The y-axis represents the total co2 emission, while the x-axis represents every year from 1960-2022. 
+    Each peak is colored in red dots, while each valley is colored in green. 
+    The highest CO2 emission occurred in 1979, while the lowest CO2 emission occurred in 2020. 
+</span>
 
-<h4 >Taking a trip down memory lane</h4>
+<h4 >1979: The Second Oil Crisis and Industrial Impacts</h4>
 <p>
-    In 1979, a huge increase in CO2 emission occured. The second oil crisis happened in 1979,
+    In 1979, a huge increase in CO2 emission occured. The second oil crisis happened in <a href="https://history.aip.org/climate/public.htm#L_M045">1979</a>,
     which was an aftermath of the Iranian revolution. It was the disruption in oil production from Iran 
-    that caused the decline in global supply. Because of the shortage of oil and increase of energy prices, 
+    that caused the decline in global supply, since the Iranian leader Ayatollah Khomeni 
+    <a href="https://link.springer.com/chapter/10.1007/978-1-349-07765-6_3">decided to cut the export by 50 percent</a> to force most governments of the oil-consuming countries to take the energy problem seriously.
+    Because of the shortage of oil, the energy prices increased and
     the world started to shift the energy production away from oil to coal. The transition 
     meant that CO2 emission increased, because coal produces more CO2 emissions per unit of energy compared 
     to oil. The second oil crisis was a global issue, where EU countries heavily 
     relied on oil imports for energy, transportation, and industry.  
-    Now if we take a closer look into 1979 through a map plot, we see that countries 
-    such as Germany, Poland and France had high CO2 emission, where Germany had the highest CO2 emissions.
-
     </p>
-<h4 >Breaking down 1979</h4>
-In 1979, Germany faced some factors that contributed to its high CO2 emissions.
-At that time, Germany highly relied on coal for its energy production, which stemmed from 
-a combination of historical factors and the countries industrial landscape. As Germany is one of 
-Europe's leading industrial powers, with it's manufacturing sector, including steel production, chemical manufacturing, and cement production,
-it follows that it's CO2 emissions would rank higher compared to other countries. 
-    
-    <!--we saw a big increase in energy use, which can be blamed on the rise in industry. 
-    It was all about chasing growth and progress, which meant that we were burning through resources like 
-    there was no tomorrow. Now if we take a closer look into 1990, focusing on CO2 emission 
-    across european countries, then we see some countries standing out. 
-    Countries such as Luxembourg, Estonia, Germany and Finland are some of the frontrunners, with 
-    Luxembourg topping the charts for the highest CO2 emission that year. 
-Turmoil, which was one of the major petruleum
-    exporting, that derived from Iran and caused the global supply to decline significantly. 
-    Because of the significant decline, meant that global supply of gasoline and diesel fuel were the 
-    energy that seleveral countries ended up using. -->
-
 <p>
-
+    Now if we take a closer look into 1979 through a map plot, we see that countries 
+    such as Germany, Poland, France and Italy had high CO2 emission. 
+    These countries are <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Industrial_production_statistics">all industrialized countries </a>, facing similar battles in decreasing CO2 emission levels,
+    where Germany is the EU country with the highest CO2 emissions at that time. 
 </p>
-{% include CO2_Emission_EU_Map_Online_1979.html %}
-<span class="caption text-muted">Europe's CO2 Emission in 1979</span>
+
+    {% include CO2_Emission_EU_Map_Online_1979.html %}
+    <span class="caption text-muted">Europe's CO2 Emission in 1979</span>
+    <span class="caption text-muted">
+        The map is an overview of Europe's CO2 emission in 1979.
+        Each country are colored based on how much CO2 emission they had in 1979. 
+        The closer the country's color is to red, the higher the CO2 emission level, and 
+        the closer it is to blue, the lower the CO2 emission level. 
+        When hovering over the country, you can get a overview of the year, country and CO2 emission.
+    </span>
+
+<h4>Comparative Analysis of CO2 Emissions Across Europe</h4>
+    <p>
+In 1979, Germany faced some factors that contributed to its high CO2 emissions, such as the second oil crisis.
+Because of the crisis, Germany transitioned to coal and highly relied on it for its energy production. Since Germany is 
+a industrial country, the increase of CO2 emission was a combination of historical factors and the countries industrial landscape. 
+</p>
+
 <p>
-    Although Germany had significant CO2 emissions in 1979, 
-    Malta, Cyprus and Slovenia stood out among the European countries for their low CO2 emissions during the same period, 
-    where Malta had the lowest CO2 emissions that year. Malta is a relatively small country with 
-    a small population of people and a less industrialized economy compared to other European countries,
-    where a country such as Germany is the opposite.
+    Additionally, the structure of Germany's economy, emphazised heavily on industries such as 
+    steel production, chemical manufacturing, and cement production, which generates higher 
+    CO2 emissions compared to other countries with less industrialized economies. 
+</p>
+<p>
+    While Germany's CO2 emissions were influenced by the countries industrial landscape and historical factors, 
+    it's essetial to contrast this with the emissions of other European countries, with less CO2 emissions. 
+    Malta, Cyprus and Portugal stood out among the European countries for their low CO2 emissions during the same period, 
+    where Malta had the lowest CO2 emissions that year. 
+</p>
+
+<p>
+    Malta is a relatively small country with a small population, and a less industrialized economy compared to larger European countries,
+    such as Germany. With Malta having less heavy industries such as steel production, chemical manufactoring, and cement production, Malta's carbon 
+    footprint was much lower. 
+</p>
+
+<p> 
+    Similarly, countries like Portugal and Cyprus with their less industrialized economies, resulting in less CO2 emission levels. 
 </p>
 
 <!--<p>
@@ -85,34 +105,45 @@ Turmoil, which was one of the major petruleum
     seen in the line plot. 
 </p>
 -->
-<h4 >A Pandemic Pause</h4>
-<p> As seen in the line plot, a notable dip occured in 2020, where the CO2 emissions hit the lowest level in EU after 1979. 
-    In 2020 the world was hit by a pandemic known as COVID 19, which slowed down 
-    the global economy, resulting in a decrease in CO2 emissions. 
+<h4 >Impact of the COVID-19 Pandemic on CO2 Emissions</h4>
+<p> As seen in the <a href="#lineplot">line plot</a>, a notable dip occured in 2020, where the CO2 emissions hit the lowest level in EU after 1979. 
+    In 2020 the world was hit by a pandemic known as COVID 19, which <a href="https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/global-co2-emissions-rebound-2021-after-temporary-reduction-during-covid19-lockdown-2022-10-14_en">slowed down 
+    the global economy, which caused the CO2 emission levels to decrease. </a>
     
 </p>
 
 {% include CO2_Emission_EU_Map_Online_2020.html %}
 <span class="caption text-muted">Europe's CO2 Emission in 2020</span>
+<span class="caption text-muted">
+    The map is an overview of Europe's CO2 emission in 2020.
+    Each country are colored based on how much CO2 emission they had in 2020. 
+    The closer the country's color is to red, the higher the CO2 emission level, and 
+    the closer it is to blue, the lower the CO2 emission level. 
+    When hovering over the country, you can get a overview of the year, country and CO2 emission.
+</span>
 
 <p> Due to the quarantines in the covid 19 pandemic, changes in consumer behavior and lifestyle choices occured, 
-    which influenced energy consumption patterns and emission levels. Many people shifted towards remote 
-    work, which meant a reduction in transportation.
+    which influenced energy consumption patterns and emission levels. 
+    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10281825/">A notable phenomenon was the shift towards remote work, which meant a decrease in transportation related emissions. </a>
 </p>
 <p>
-    When we once again take a look into the CO2 emission in 2020, we see that Germany still remains the country with the highest CO2 emission, and Malta 
-    the country with the lowest level of CO2 emissions. Even though the two countrie's spots remain the same, 
-    we still do see a decrease of CO2 emissions in both countries, which makes sense based on the 
-    circumstances around those events. 
+    When taking a closer look at the map plot, Germany still remains the country with the highest CO2 emission, while Malta 
+    continues to be the country with the lowest level of CO2 emissions. Despite the countries still 
+    holding their spots, both countries still experienced a reduction in CO2 emissions. 
 </p>
 
-<h4 >Steps Towards Reduction</h4>
+<h4 >Steps Towards Reduction: Germany's Initiatives</h4>
 <p>
     There has been a noticecable decrease over the years in Germany, when it comes to CO2 emission, which 
-    can be seen through the line plot. This decline reflects the efforts in adressing the issue of climate change. 
+    can be seen through the <a href="#lineplot_Germany">line plot</a>. This decline reflects the efforts in adressing the issue of climate change. 
 </p>
-<img src="{{ '/img/posts/germany_CO2_emission_every_year.png' | relative_url }}" alt="Crime Heatmap" style="width: 100%;">
+<img id="lineplot_Germany" src="{{ '/img/posts/germany_CO2_emission_every_year.png' | relative_url }}" alt="Crime Heatmap" style="width: 100%;">
 <span class="caption text-muted">Germany's CO2 Emissions from 1960-2022</span>
+<span class="caption text-muted">
+    The plot is an overview of Germany's CO2 Emission Journey from 1960 to 2022. 
+    The y-axis represents the total co2 emission, while the x-axis represents every year from 1960-2022. 
+    The highest CO2 emission occurred in 1979, while the lowest CO2 emission occurred in 2020. 
+</span>
 <p>
 Germany has implemented a series of initiatives aimed to reduce CO2 emissions to transition 
 towards a more sustainable energy landscape. Germany has decided to <a href="https://www.bundesregierung.de/breg-en/issues/climate-action/government-climate-policy-1779414">increase 
@@ -128,17 +159,17 @@ opportunity to receive a payment for replacing old oil central heating, further 
 <p>
 Moreover, Germany has been exploring and implementing a series of initiatives, 
 showing the strong commitment to reduce CO2 emissions. Currently, their plan is to 
-reduce greenhouse gas emission by 55 percent by 2030, 
+reduce greenhouse gas emission by <a href="https://www.bundesregierung.de/breg-en/issues/climate-action/government-climate-policy-1779414">55 percent by 2030</a>, 
 by stop using coal to generate electic power and restructure their mobility. 
 </p>
 
-<h4 >Shaping a future</h4>
+<h4 >Shaping a Sustainable Future</h4>
 
 <p> As we navigate the complexities of the 21st century, it's important
     to recognize the historical events and the CO2 emissions. By learning from 
     the past and getting insights from the historical analysis, 
     we can get a deeper understanding of how future events might impact CO2 emissions. 
-    With this knowledge we are better equopped to anticipate the challenges and 
+    With this knowledge we are better equipped to anticipate the challenges and 
     also opportunites that lie ahead of us. 
 
     Trough strategic policy interventions, investments in renewable 
@@ -156,7 +187,15 @@ promoting renewable technologies -->
 </p>
 
 <p>
-    Ultimately, the lessions drawn from Europ's CO2 emission history serve as a reminder to take action. 
+    Ultimately, the lessons drawn from Europ's CO2 emission 
+    history serve as a reminder to take action. As we navigate into the dynamics of climate change, 
+    the relationship between CO2 emissions and its potential effects on global weather patterns becomes apparent. 
+</p>
+
+<p>
+    In the next blog, we will look into extreme weather events and explore 
+    if CO2 emissions can potentially affect climate conditions.
+
 </p>
 
 
