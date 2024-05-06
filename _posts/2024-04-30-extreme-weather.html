@@ -8,7 +8,12 @@ background: '/img/extremeweather.jpg'
 You've have read about CO2 emissions in the EU and worldwide, including which countries have the highest and lowest emissions.
 We've delved into the potential reasons behind these trends, including these country's laws and regulations. 
 Now, this blog post will explore whether there's a correlation between the countries emissions and the frequency of natural disasters. Can it be anticipated that these high-emission countries will experience more natural disasters compared to those with lower emissions? 
-This blog post will delve into this intriguing topic to uncover any potential relationships. In this blog we will mainly focus on Europe because the last section will compare Europe and the worlds countries with highest emission. 
+This blog post will delve into this intriguing topic to uncover any potential relationships. In this blog we will mainly focus on Europe, narrowing it down. However the last section will compare Europe and the worlds countries with highest emission. <br> <br> 
+In our research, we employ two datasets. One catalogues disaster occurrences in Europe, grouped as either natural or technical. An example of a technical disaster could be a miscellaneous accident, such as a building collapse. We refine this dataset to focus exclusively on natural disasters types,
+which could be a storm or an earthquake. The second dataset mirrors these attributes but encompasses global occurrences. Both datasets span the years 2000-2024.
+Initially, the global dataset contains 15,718 rows before filtering for the natural disaster group. After this filtration, the dataset shrinks to 9,993 rows, which is then used based on the world's top emitters.
+In contrast, the initial dataset for Europe contains considerably fewer rows, totaling 1,824. After filtering for natural disasters, it comprises 1,108 rows, a less significant reduction compared to the global dataset.
+<br> <br> These datasets will aid in discerning whether there is a direct correlation between emissions and natural disasters, and to what extent.
 
 </p>
 
@@ -55,11 +60,11 @@ We observe the cumulative count of natural disaster types each year across Europ
 <span>However, what does this reveal when we delve further into the distribution of natural disasters?</span> <br> <br>
 
 This serves as an extension to the previous plot, providing a breakdown of individual disaster types and their occurrences over the years. 
-Hovering over the different lines allows you to view the specific disaster type and its frequency. 
+
 
 <!-- <img src="/img/natural_disasters_all_year_plot_WW.png" alt="Natural Disasters summarized for each year Worldwide", style="width: 100%;"> -->
 {% include plot_disaster_EU_all_years.html%}
-<span class="caption text-muted"> Natural disaster in EU across all years. <br> Each category is assigned a color. To investigate the plot further, you can click on the natural disaster icons in the overview on the right to remove them from the plot.
+<span class="caption text-muted"> All natural disaster in EU across all years. <br> Hovering over the different lines allows you to view the specific disaster type and its frequency. Each category is assigned a color, you can click on the natural disaster icons in the overview on the right to remove them from the plot.
 </span>
 
 <p> 
@@ -82,14 +87,15 @@ Overall, the occurrences of natural disasters also follow a decreasing trend sim
 <p>The next section will delve deeper into the relationship between natural disasters and CO2 emissions. 
     This time, we'll focus on the countries with the highest and lowest emissions in the EU to explore whether there's a correlation between their CO2 emissions and the frequency of natural disasters. 
     They will be assessed based on the latest year of the dataset and plot, which is 2022, as depicted in the first blog post, figrue 3. 
-    </p>
+    </p>   
 
 <h1 class="section-heading" style="font-size: 24px;">Exploring Europe's Top Emitters</h1>
 According to Figure 3 in the first blog post, Germany is identified as the country with the highest CO2 emissions in the EU.
-Click on each disaster type to remove them from the plot and investigate if there are any instances of overlapping disaster types.
 
 {% include Germany_EU.html %}
-<span class="caption text-muted"> Natural disasters in Germany from 2000-2024. </span>
+<span class="caption text-muted"> Natural disasters in Germany from 2000-2024, where we see a pattern of frequent natural disasters. Germany has according to our dataset experienced 5 different types throughout the year.
+    <br> Click on a disaster type to remove it from the plot and investigate if there are overlapping disaster types.
+</span>
 
 Germany encounters a variety of 5 natural disasters, with only one instance of an earthquake and two of an epidemic occurring between 2002 and 2004. 
 Storms are the most frequent natural disaster in Germany, peaking multiple times at three occurrences throughout the years. Extreme temperatures are also observed multiple times, 
@@ -99,6 +105,8 @@ Despite this, according to our data, Germany only encountered one natural disast
 <!-- Although a direct link to each year may not be evident, it is noteworthy that Germany experienced at least one natural disaster annually, while being the largest CO2 emitter in the EU.--> 
 
 {% include Italy_EU.html%}
+<span class="caption text-muted"> Natural disasters in Italy from 2000-2024, where we see a pattern of frequent experienced natural disasters. Italy has experienced 10 different types throughout the years <br> Click on a disaster type to remove it from the plot and investigate if there are overlapping disaster types </span>
+
 Italy experiences a significantly higher number of natural disasters compared to Germany, both in terms of quantity and variety. 
 Figure 3 illustrates an increasing trend in Italy's natural disasters leading up to the 2000s, peaking in 2005. However, the occurrence of natural disasters in 2005 does not align with this trend. <br>
 Interestingly, while Italy's CO2 emissions have been steadily decreasing since their peak in 2005, there is a subsequent increase in the number of natural disasters observed from around year 2014.
@@ -111,7 +119,7 @@ This suggests that the effects and consequences of CO2 emissions may be felt and
 <h6 class="section-heading" style="font-size: 24px;">Exploring Europe's Lowest Emitters</h6>
 
 {% include Malta_EU.html%}
-<span class="caption text-muted"> Natural disasters in Malta from 2000-2024</span>
+<span class="caption text-muted"> Natural disasters in Malta from 2000-2024. Malta has only experinced one natural disaster of extreme temperature</span>
 
 Malta's emissions have fluctuated since the year 2000, showing both increases and decreases. 
 A notable decrease occurred in 2015, with subsequent years remaining relatively around the same number or slightly lower. Regarding natural disasters in Malta, 
@@ -119,7 +127,7 @@ only one instance was detected in 2022, where in this year a slight increase in 
 emissions at this level or higher have been recorded previously.
 
 {% include Latvia_EU.html%}
-<span class="caption text-muted"> Natural disasters in Latvia from 2000-2024</span>
+<span class="caption text-muted"> Natural disasters in Latvia from 2000-2024. Latvia doesn't depict a clear pattern of frequent natural disasters</span>
 In the years leading up to 2020, Latvia experienced a notable decline in emissions, with fluctuations between increases and decreases observed overall. <br>
 Analyzing natural disasters in Latvia reveals a peak occurrence of storms in 2005, coinciding with a slight increase in emissions compared to previous years. <br>
 However, emissions surpassed the 2005 level in 2007, 2010, and 2018. Although there is recorded natural disasters for 2007 and 2010, in 2018, Latvia witnessed its first wildfire after a period of relative stability since 2011. 
@@ -146,7 +154,7 @@ Can it be anticipated that the world's largest emitters will encounter a higher 
 The worlds biggest emitters are China and the United States of America. 
 
 {% include China_WW.html%}
-<span class="caption text-muted"> Natural disasters in China from 2000-2024</span>
+<span class="caption text-muted"> Natural disasters in China from 2000-2024. <br> China experienced the highest peak seen for natural disasters in this post, with 5 floods in year 2005</span>
 Reviewing figure 2 in the first blog post unveils that prior to 2005, China wasn't the primary emitter. 
 However, in 2005, both the USA and China overlapped, with China surpassing the USA becoming the country with the highest emission globally. <br> 
 Furhtermore, it becomes evident that China's CO2 emissions reached a peak in 2020. Since 2000, there has been a consistent and rather sharp rise in their CO2 emissions, with a slight dip in 2016. 
@@ -155,7 +163,7 @@ Notably, 2005 exhibits a peak in storm occurrences, yet despite this, CO2 emissi
 <br><br> When compared to Germany, the disparity between the two isn't particularly evident. China experienced a peak of 5 storms in 2005, whereas Germany has never encountered more than 3 instances of a single type of natural disaster within the same year. 
 Surprisingly, it may appear that Germany actually contends with more natural disasters than China despite China having a higher CO2 emission.
 {% include USA_WW.html%}
-<span class="caption text-muted"> Natural disasters in USA from 2000-2024</span>
+<span class="caption text-muted"> Natural disasters in USA from 2000-2024. <br> Usa experienced a frequent occurence of storms reaching a peak in 2018. </span>
 Until 2005, the USA were the world's biggest CO2 emitter. Prior to that, examining natural disasters from 2000-2005 reveals a peak in floods in 2002. Despite 2002 not marking a record high in emissions as the peak of CO2 emissions occurred in 2005. 
 Subsequently, there's been an overall decline with sporadic fluctuations of minor increases and decreases. However, natural disasters, notably storms, have demonstrated an upward trajectory post-2005, growing more frequent and reaching their peak in 2018. In 2020, despite a significant decrease in CO2 emissions, occurrences of natural disasters persisted, including wildfires and floods. 
 Across the years, it's not uncommon to observe multiple disaster events within a single year. <br><br> When comparing Italy and the USA, it becomes evident that Italy encounters frequent natural disasters across various years and magnitudes. In contrast, the USA also experiences natural disasters, but there are years where no incidents are recorded. Both Italy and the USA have reached a peak of 4 
