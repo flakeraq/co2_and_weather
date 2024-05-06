@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Extreme weather"
-date: 2020-01-30 23:45:13 -0400
+date: 2024-04-24
 background: '/img/extremeweather.jpg'
 ---
 <p>
 You've have read about CO2 emissions in the EU and worldwide, including which countries have the highest and lowest emissions.
 We've delved into the potential reasons behind these trends, including these country's laws and regulations. 
-Now, this blog post will explore whether there's a correlation between the countries emissions and the frequency of natural disasters. 
-Can it be anticipated that these high-emission countries will experience more natural disasters compared to those with lower emissions? 
-This blog post will delve into this intriguing topic to uncover any potential relationships.
+Now, this blog post will explore whether there's a correlation between the countries emissions and the frequency of natural disasters. Can it be anticipated that these high-emission countries will experience more natural disasters compared to those with lower emissions? 
+This blog post will delve into this intriguing topic to uncover any potential relationships. In this blog we will mainly focus on Europe because the last section will compare Europe and the worlds countries with highest emission. 
+
 </p>
 
 <h2 class="section-heading">Defining natural disasters</h2>
@@ -17,19 +17,18 @@ This blog post will delve into this intriguing topic to uncover any potential re
 This section will focus on defining the specific types of natural disasters that will be discussed in the following sections.
 The natural disasters included in this post are as follows. Click on the link associated with each natural disaster to read more about it: </p>
 <ul>
-    <li> <a href="https://education.nationalgeographic.org/resource/flood/">Flood</a> </li>
-    <li> <a href="https://www.britannica.com/science/storm">Storm</a> </li>
-    <li> <a href="https://education.nationalgeographic.org/resource/resource-library-earthquake/">Earthquake</a>  </li>
-    <li> <a href="https://education.nationalgeographic.org/resource/epidemic/">Epidemic</a> </li>
-    <li> <a href="https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0013">Glacial lake outburst flood</a>  </li>
-    <li> <a href="https://www.un-spider.org/category/disaster-type/extreme-temperature">Extreme temperature</a> </li>
-    <li> <a href="https://www.britannica.com/science/mass-movement">Mass movement (wet)</a> </li>
-    <li> <a href="https://www.britannica.com/science/mass-movement">Mass movement (dry)</a> </li>
-    <li>  <a href="https://www.nationalgeographic.com/environment/article/volcanoes">Volcanic activity</a></li>
-    <li> <a href="https://education.nationalgeographic.org/resource/wildfires/">Wildfire</a>  </li>
-    <li> <a href="https://education.nationalgeographic.org/resource/drought/">Drought</a> </li>
-    <li> <a href="https://www.homedoctorpest.com/what-considered-infestation/">Infestion</a> </li>
-    <li> <a href="">Impact</a> </li>
+    <li> <a href="https://education.nationalgeographic.org/resource/flood/" style="text-decoration: underline;">Flood</a> </li>
+    <li> <a href="https://www.britannica.com/science/storm" style="text-decoration: underline;">Storm</a> </li>
+    <li> <a href="https://education.nationalgeographic.org/resource/resource-library-earthquake/" style="text-decoration: underline;">Earthquake</a>  </li>
+    <li> <a href="https://education.nationalgeographic.org/resource/epidemic/" style="text-decoration: underline;">Epidemic</a> </li>
+    <li> <a href="https://www.undrr.org/understanding-disaster-risk/terminology/hips/mh0013" style="text-decoration: underline;">Glacial lake outburst flood</a>  </li>
+    <li> <a href="https://www.un-spider.org/category/disaster-type/extreme-temperature" style="text-decoration: underline;">Extreme temperature</a> </li>
+    <li> <a href="https://www.britannica.com/science/mass-movement" style="text-decoration: underline;">Mass movement (wet)</a> </li>
+    <li> <a href="https://www.britannica.com/science/mass-movement" style="text-decoration: underline;">Mass movement (dry)</a> </li>
+    <li>  <a href="https://www.nationalgeographic.com/environment/article/volcanoes" style="text-decoration: underline;">Volcanic activity</a></li>
+    <li> <a href="https://education.nationalgeographic.org/resource/wildfires/" style="text-decoration: underline;">Wildfire</a>  </li>
+    <li> <a href="https://education.nationalgeographic.org/resource/drought/" style="text-decoration: underline;">Drought</a> </li>
+    <li> <a href="https://www.homedoctorpest.com/what-considered-infestation/" style="text-decoration: underline;">Infestion</a> </li>
   </ul>
 
   <p> 
@@ -40,7 +39,8 @@ Now that you've become knowledgeable about natural disasters, let's delve into t
 <h2 class="section-heading">Overview of occurence of natural disasters in EU</h2>
 We observe the cumulative count of natural disaster types each year across Europe. 
 {% include natural_disasters_all_year_plot_EU.html%}
-<span class="caption text-muted"> Total number of natural disaster each year from 2000-2024</span>
+<span class="caption text-muted"> Total number of natural disaster each year from 2000-2024. <br>
+    Explore the plot by hovering over the line to view detailed information about the specific year and its occurrences.</span>
 
 <div style="text-align: center;">
 </div>
@@ -56,11 +56,11 @@ We observe the cumulative count of natural disaster types each year across Europ
 
 This serves as an extension to the previous plot, providing a breakdown of individual disaster types and their occurrences over the years. 
 Hovering over the different lines allows you to view the specific disaster type and its frequency. 
-To investigate the plot further, you can click on the natural disaster icons in the overview on the right to remove them from the plot.
 
 <!-- <img src="/img/natural_disasters_all_year_plot_WW.png" alt="Natural Disasters summarized for each year Worldwide", style="width: 100%;"> -->
 {% include plot_disaster_EU_all_years.html%}
-<span class="caption text-muted"> Natural disaster in EU across all years</span>
+<span class="caption text-muted"> Natural disaster in EU across all years. <br> Each category is assigned a color. To investigate the plot further, you can click on the natural disaster icons in the overview on the right to remove them from the plot.
+</span>
 
 <p> 
 This plot illustrates that storms, extreme temperatures, and floods are the most frequent natural disasters. However, there isn't a clear trend of decreasing occurrences across different types of disasters; instead, we observe fluctuations with peaks and declines. <br> 
@@ -89,7 +89,7 @@ According to Figure 3 in the first blog post, Germany is identified as the count
 Click on each disaster type to remove them from the plot and investigate if there are any instances of overlapping disaster types.
 
 {% include Germany_EU.html %}
-<span class="caption text-muted"> Natural disasters in Germany from 2000-2024</span>
+<span class="caption text-muted"> Natural disasters in Germany from 2000-2024. </span>
 
 Germany encounters a variety of 5 natural disasters, with only one instance of an earthquake and two of an epidemic occurring between 2002 and 2004. 
 Storms are the most frequent natural disaster in Germany, peaking multiple times at three occurrences throughout the years. Extreme temperatures are also observed multiple times, 
@@ -128,8 +128,22 @@ In 2022, another slight increase in emissions occurred, coinciding with Latvia e
 For Latvia, it's noticeable that when experiencing higher CO2 emissions, there appears to be a link to the occurrence of natural disasters in the same year.
 <!-- {% include Sweden_EU.html%}--> 
 
+<h6 class="section-heading" style="font-size: 24px;">Is there a correlation between natural disasters and emissions?
+</h6>
+In summary, it's evident that countries with higher emissions experience a greater frequency of natural disasters compared to those with lower emissions. 
+However, when comparing countries with the highest emissions to those with slightly lower emissions, it becomes challenging to discern a clear pattern, as different types of disasters occur. 
+Geographical location also plays a role, with Germany, located more to the north of Europe, experiencing more storms, while Italy, more to the sourth of Europe, encounters more flooding.
+Moreover, pinpointing a specific year and establishing a direct correlation between emissions and the occurrence of natural disasters proves challenging. 
+The timeline for when countries will face the consequences of emissions remains uncertain, making it difficult to draw definitive conclusions. In cases like Italy, where emissions decreased after 2005 but natural disasters continued to increase, 
+other influencing factors may be at play. This could include the delayed effects of emissions or the impact of neighboring countries' emissions.
+Overall, it can be concluded that countries with lower CO2 emissions tend to experience fewer natural disasters. 
+However, due to various contributing factors, linking a specific year's emissions to the same year of natural disasters can be complex and inconclusive. <br> <br>
+Is there a relationship between CO2 emissions and the occurrence of natural disasters? While Germany and Italy are among Europe's largest CO2 emitters, they are not on the global scale. 
+Can it be anticipated that the world's largest emitters will encounter a higher frequency of natural disasters?
+
 
 <h6 class="section-heading" style="font-size: 24px;">Exploring The Worlds's Highest Emitters</h6>
+The worlds biggest emitters are China and the United States of America. 
 
 {% include China_WW.html%}
 <span class="caption text-muted"> Natural disasters in China from 2000-2024</span>
@@ -138,21 +152,19 @@ However, in 2005, both the USA and China overlapped, with China surpassing the U
 Furhtermore, it becomes evident that China's CO2 emissions reached a peak in 2020. Since 2000, there has been a consistent and rather sharp rise in their CO2 emissions, with a slight dip in 2016. 
 <br> Conversely, when observing natural disasters, no discernible patterns emerge regarding their frequency of occurrence. However, our data indicates that China encountered its first drought in 2009. 
 Notably, 2005 exhibits a peak in storm occurrences, yet despite this, CO2 emissions continue to rise at a steeper rate, ultimately surpassing previous levels until 2020. In 2020 the occurrence of three floods stands out as a recurring peak.
-
+<br><br> When compared to Germany, the disparity between the two isn't particularly evident. China experienced a peak of 5 storms in 2005, whereas Germany has never encountered more than 3 instances of a single type of natural disaster within the same year. 
+Surprisingly, it may appear that Germany actually contends with more natural disasters than China despite China having a higher CO2 emission.
 {% include USA_WW.html%}
 <span class="caption text-muted"> Natural disasters in USA from 2000-2024</span>
 Until 2005, the USA were the world's biggest CO2 emitter. Prior to that, examining natural disasters from 2000-2005 reveals a peak in floods in 2002. Despite 2002 not marking a record high in emissions as the peak of CO2 emissions occurred in 2005. 
 Subsequently, there's been an overall decline with sporadic fluctuations of minor increases and decreases. However, natural disasters, notably storms, have demonstrated an upward trajectory post-2005, growing more frequent and reaching their peak in 2018. In 2020, despite a significant decrease in CO2 emissions, occurrences of natural disasters persisted, including wildfires and floods. 
-Across the years, it's not uncommon to observe multiple disaster events within a single year.
+Across the years, it's not uncommon to observe multiple disaster events within a single year. <br><br> When comparing Italy and the USA, it becomes evident that Italy encounters frequent natural disasters across various years and magnitudes. In contrast, the USA also experiences natural disasters, but there are years where no incidents are recorded. Both Italy and the USA have reached a peak of 4 
+occurrences of a single type of natural disaster in a year. This trend mirrors that observed between Germany and China, suggesting that Italy may actually experience natural disasters more frequently than the USA. 
 
-<h6 class="section-heading" style="font-size: 24px;">Is there a correlation between natural disasters and emissions?
-</h6>
-In summary, it's evident that countries with higher emissions experience a greater frequency of natural disasters compared to those with lower emissions. However, when comparing countries with the highest emissions to those with slightly lower emissions, it becomes challenging to discern a clear pattern, as different types of disasters occur. Geographical location also plays a role, with Germany, located more to the north of Europe, experiencing more storms, while Italy, more to the sourth of Europe, encounters more flooding.
 
-Moreover, pinpointing a specific year and establishing a direct correlation between emissions and the occurrence of natural disasters proves challenging. The timeline for when countries will face the consequences of emissions remains uncertain, making it difficult to draw definitive conclusions. In cases like Italy, where emissions decreased after 2005 but natural disasters continued to increase, other influencing factors may be at play. This could include the delayed effects of emissions or the impact of neighboring countries' emissions.
-
-Overall, it can be concluded that countries with lower CO2 emissions tend to experience fewer natural disasters. However, due to various contributing factors, linking a specific year's emissions to the same year of natural disasters can be complex and inconclusive.
-
+<h6 class="section-heading" style="font-size: 24px;">Is there an increase of natural disasters among the highest emitters in EU compared to the global scale</h6>
+There is no clear indication that the world's top emitters, who emit more CO2 than those in Europe, tend to experience more natural disasters. In fact, it could be argued almost the opposite, as the top emitters in Europe appear to be encountering increasingly frequent natural disasters.
+This phenomenon may be attributed to factors unrelated to CO2 emissions which has not been researched in this blog post.
 
 
 
