@@ -2,7 +2,7 @@ title:              Unraveling the Impact of CO2 Emissions on Climate Patterns
 email:              "s103629@dtu.dk"
 description:        A Blog by Hans Christian, Helle and Clair
 author:             Hans Christian (s103629), Helle (s180317) and Clair (s184187)
-baseurl:            "" #"/co2_and_weather"
+baseurl:            "/co2_and_weather"
 url:                "https://flakeraq.github.io"
 
 show_date:          False
